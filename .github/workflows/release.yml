@@ -30,8 +30,9 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm publish:lib --tag 'latest-'${{ github.event.release.target_name }}
+      - run: echo "TAG=latest-${{ github.event.release.target_name }}" >> $GITHUB_ENV
+      - run: npm ci 
+      - run: npm publish:lib --tag $TAG
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
@@ -46,7 +47,8 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
+      - run: echo "TAG=latest-${{ github.event.release.target_name }}" >> $GITHUB_ENV
       - run: npm ci
-      - run: npm publish:lib --tag 'latest-'${{ github.event.release.target_name }}
+      - run: npm publish:lib --tag $TAG
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

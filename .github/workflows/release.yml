@@ -1,4 +1,4 @@
-name: NPM, GPR and YARN CD bot
+name: Release
 
 on:
   release:

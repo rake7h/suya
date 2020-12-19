@@ -1,8 +1,7 @@
 /**
  * @package Suya - Suya is a blazing-fast and strongly-typed express middleware(s)
  * that adds caching layer on top of your express API response to improve performance.
- * @author Obafunso Ridwan Adebayo
- * @version 1.0.0
+ * @author Obafunso Ridwan Adebayo 
  * @license
  * MIT License.
  *

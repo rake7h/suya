@@ -26,15 +26,7 @@
     "benchmark:node-cache": "jest ./tests/benchmarks/node-cache.test.ts",
     "benchmark:redis": "jest ./tests/benchmarks/redis.test.ts",
     "benchmark:memcached": "jest ./tests/benchmarks/memcached.test.ts"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*": "npm run format && npm run lint"
-  },
+  }, 
   "repository": {
     "type": "git",
     "url": "https://github.com/ridwanobafunso/suya.git"
@@ -45,10 +37,8 @@
   "devDependencies": {
     "@types/jest": "^26.0.19",
     "@types/response-time": "^2.3.4",
-    "axios": "^0.21.0",
-    "husky": "^4.3.6",
-    "jest": "^26.6.3",
-    "lint-staged": "^10.5.3",
+    "axios": "^0.21.0", 
+    "jest": "^26.6.3", 
     "prettier": "^2.2.1",
     "response-time": "^2.3.2",
     "ts-jest": "^26.4.4",

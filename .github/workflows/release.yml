@@ -31,7 +31,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish --tag ${{ github.event.release.target_commitish }}
+      - run: npm publish:lib --tag ${{ github.event.release.target_commitish }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
@@ -47,6 +47,6 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
-      - run: npm publish --tag ${{ github.event.release.target_commitish }}
+      - run: npm publish:lib --tag ${{ github.event.release.target_commitish }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

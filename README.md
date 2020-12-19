@@ -2,7 +2,7 @@
 
 ![Suya](https://raw.githubusercontent.com/ridwanobafunso/suya/latest-v1.0.0/SUYA.gif 'Suya Library')
 
-[![Actions Status](https://github.com/{user}/{repo}/workflows/{action}/badge.svg)](https://github.com/{user}/{repo}/actions)
+[![Actions Status](https://github.com/ridwanobafunso/suya/workflows/{action}/badge.svg)](https://github.com/ridwanobafunso/suya/actions)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![Node version](https://img.shields.io/node/v/suya.svg?style=flat)](http://nodejs.org/download/)
 [![HitCount](http://hits.dwyl.com/ridwanobafunso/suya.svg)](http://hits.dwyl.com/ridwanobafunso/suya)

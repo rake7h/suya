@@ -19,8 +19,7 @@
   "scripts": {
     "format": "prettier --write --single-quote --no-semi src/ tests/ examples/",
     "lint": "prettier --check --single-quote --no-semi src/ tests/ examples/",
-    "build": "tsc",
-    "publish:lib": "npm run build && cd lib && npm publish",
+    "build": "tsc", 
     "start:benchmark:server:node-cache": "ts-node ./tests/benchmarks/servers/node-cache.ts",
     "start:benchmark:server:redis": "ts-node ./tests/benchmarks/servers/redis.ts",
     "start:benchmark:server:memcached": "ts-node ./tests/benchmarks/servers/memcached.ts",

@@ -31,7 +31,7 @@ jobs:
       - run: npm ci
       - run: npm publish:lib --tag ${{ github.event.release.target_commitish }}
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   publish-gpr:
     needs: build

@@ -622,7 +622,7 @@ $ npm run benchmark:memcached
 
 ## Changelog
 
-- v1.0.0 - Commit all source codes to Github repo, added all documentation in the repo README.md, build/test source codes with Github Actions CI, and then publish Suya to both NPM and YARN package manager.
+- v1.0.0 - Commit all source codes to Github repo, added all documentation in the repo README.md, format, lint, build and publish with Github Actions CI/CD.
 
 ## Versioning
 

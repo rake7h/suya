@@ -3,9 +3,11 @@
 ![Suya](https://raw.githubusercontent.com/ridwanobafunso/suya/latest-v1.0.0/SUYA.gif 'Suya Library')
 
 [![Actions Status](https://github.com/ridwanobafunso/suya/workflows/format,%20lint,%20build%20and%20publish/badge.svg)](https://github.com/ridwanobafunso/suya/actions)
+[![MIT License](https://img.shields.io/apm/l/suya.svg?)]
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![Node version](https://img.shields.io/node/v/suya.svg?style=flat)](http://nodejs.org/download/)
 [![HitCount](http://hits.dwyl.com/ridwanobafunso/suya.svg)](http://hits.dwyl.com/ridwanobafunso/suya)
+[![GitHub contributors](https://img.shields.io/github/contributors/suya/suya.svg?style=flat)]()  
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ridwanobafunso/suya/blob/main/CONTRIBUTING.md)
 
 ## Introduction

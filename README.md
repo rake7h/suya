@@ -511,7 +511,7 @@ app.use((err, req, res, next) => {
 
 ## Contributors
 
-Many thanks to all our contributors that helps to add core APIs to **suya**. We say a **BIG** thank you.
+Many thanks to all our contributors that helps to add core APIs to **suya**. I say a **BIG** thank you.
 
 1. [Obafunso Ridwan Adebayo](https://github.com/ridwanobafunso)
 

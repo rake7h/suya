@@ -5,7 +5,6 @@
 [![Actions Status](https://github.com/ridwanobafunso/suya/workflows/format,%20lint,%20build%20and%20publish/badge.svg)](https://github.com/ridwanobafunso/suya/actions)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/ridwanobafunso/suya)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
-[![NPM Version](https://img.shields.io/npm/v/suya.svg?style=flat)]()
 [![Node version](https://img.shields.io/node/v/suya.svg?style=flat)](http://nodejs.org/download/)
 [![GitHub contributors](https://img.shields.io/github/contributors/ridwanobafunso/suya.svg?style=flat)]()  
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ridwanobafunso/suya/blob/main/CONTRIBUTING.md)

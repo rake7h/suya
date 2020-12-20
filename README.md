@@ -515,7 +515,7 @@ Many thanks to all our contributors that helps to add core APIs to **suya**. We 
 
 1. [Obafunso Ridwan Adebayo](https://github.com/ridwanobafunso)
 
-Contributions are welcome. Check [CONTRIBUTING.md](http://).
+Contributions are welcome. Check [CONTRIBUTING.md](https://github.com/ridwanobafunso/suya/blob/latest-v1.0.0/CONTRIBUTING.md).
 
 ## Tests
 

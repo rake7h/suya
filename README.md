@@ -8,7 +8,7 @@
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/ridwanobafunso/suya)
 [![Node version](https://img.shields.io/node/v/suya.svg?style=flat)](http://nodejs.org/download/)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ridwanobafunso/suya/blob/main/CONTRIBUTING.md)
-[![GitHub contributors](https://img.shields.io/github/contributors/ridwanobafunso/suya.svg?style=flat)]()  
+[![GitHub contributors](https://img.shields.io/github/contributors/ridwanobafunso/suya.svg?style=flat)](https://github.com/ridwanobafunso/suya)  
 
 ## Introduction
 

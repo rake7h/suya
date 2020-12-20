@@ -1,6 +1,6 @@
 {
   "name": "suya",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A blazing-fast and strongly-typed exxpress middleware(s) that adds caching layer on top of your express API response to improve performance.",
   "author": "Obafunso Ridwan Adebayo <obafunsoadebayo17@gmail.com> (https://github.com/ridwanobafunso)",
   "license": "MIT",

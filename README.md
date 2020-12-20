@@ -622,7 +622,7 @@ $ npm run benchmark:memcached
 
 ## Changelog
 
-- v1.0.0 - Commit all source codes to Github repo, added all documentation in the repo README.md, format, lint, build and publish with Github Actions CI/CD.
+- v1.0.0 - Commit all source codes, then I release v1.0.0 tag which triggered Github Actions workflows to format, lint, build and publish the library.
 
 ## Versioning
 

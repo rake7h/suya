@@ -501,7 +501,7 @@ app.use((err, req, res, next) => {
 })
 ```
 
-**NB:** Some errors occur during the initializations of suya object and these errors are thrown when developers don't follow typescript compiler/rules according to suya types definition. These errors are been underlined during the design time but the developer ignores them.
+**NB:** Some errors occur during the initializations of suya object and these errors are thrown when developers don't follow typescript compiler/rules according to suya types definition. These errors are been underlined during the development but the developer ignores them.
 
 ## Tips
 

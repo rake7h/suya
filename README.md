@@ -32,7 +32,7 @@ Suya is an express middleware(s) that adds caching layer on top of your express 
 2. Simple API.
 3. Typescript Support.
 4. Many Cache Engines Support.
-5. Nice Terminal Logging
+5. Nice Terminal Logging.
 
 ## Usage
 

@@ -3,9 +3,9 @@
 ![Suya](https://raw.githubusercontent.com/ridwanobafunso/suya/latest-v1.0.0/SUYA.gif 'Suya Library')
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ridwanobafunso/suya) 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![Actions Status](https://github.com/ridwanobafunso/suya/workflows/format,%20lint,%20build%20and%20publish/badge.svg)](https://github.com/ridwanobafunso/suya/actions)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/ridwanobafunso/suya)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![Node version](https://img.shields.io/node/v/suya.svg?style=flat)](http://nodejs.org/download/)
 [![GitHub contributors](https://img.shields.io/github/contributors/ridwanobafunso/suya.svg?style=flat)]()  
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ridwanobafunso/suya/blob/main/CONTRIBUTING.md)

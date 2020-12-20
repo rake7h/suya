@@ -624,8 +624,8 @@ $ npm run benchmark:memcached
 ## Changelog
 
 - v1.0.0 - Commit all source codes, then I release v1.0.0 tag which triggered Github Actions workflows to format, lint, build and publish the library.
-- v1.0.0 - Unpublished v1.0.0 from npm due to some errors
-- v1.0.1 - I release v1.0.1 tag which triggered Github Actions workflows to format, lint, build and publish the library.
+- v1.0.0 - Unpublished v1.0.0 from npm due to some errors, and remove v1.0.0 releases and tags from this repo.
+- v1.0.1 - I release v1.0.1 tag which triggered Github Actions workflows to format, lint, build and re-publish the library.
 
 ## Versioning
 

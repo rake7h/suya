@@ -28,9 +28,10 @@ export class Memcached {
     res: Response,
     next: NextFunction
   ): Promise<Response | any> {
-    // throw error if the request method is NOT 'GET'
+    // pass error to the next middleware if the request method is NOT 'GET' so that it
+    // can be handle with global express error handlers
     if (!['GET'].includes(req.method))
-      throw new SuyaError(EErrors.FOREVER_INVALID_REQUEST_METHOD)
+      next(new SuyaError(EErrors.FOREVER_INVALID_REQUEST_METHOD))
 
     // It seems memJS client have problem with thier Promise-based style
     // memJS callback seem to be working just fine. so I turn their callbacks
@@ -91,9 +92,10 @@ export class Memcached {
     res: Response,
     next: NextFunction
   ): Promise<Response | any> {
-    // throw error if the request method is NOT 'GET'
+    // pass error to the next middleware if the request method is NOT 'GET' so that it
+    // can be handle with global express error handlers
     if (!['GET'].includes(req.method))
-      throw new SuyaError(EErrors.DURATION_INVALID_REQUEST_METHOD)
+      next(new SuyaError(EErrors.DURATION_INVALID_REQUEST_METHOD))
 
     // It seems memJS client have problem with thier Promise-based style
     // memJS callback seem to be working just fine. so I turn their callbacks
@@ -155,9 +157,11 @@ export class Memcached {
     res: Response,
     next: NextFunction
   ): Promise<Response | any> {
-    // throw error if the request method is NOT 'POST', 'PUT', 'PATCH', or 'DELETE'
+    // pass error to the next middleware if the request method is NOT 'POST', 'PUT',
+    // 'PATCH', or 'DELETE', so that it can be handle with global express error
+    // handlers
     if (!['POST', 'PUT', 'PATCH', 'DELETE'].includes(req.method))
-      throw new SuyaError(EErrors.RESETONMUTATE_INVALID_REQUEST_METHOD)
+      next(new SuyaError(EErrors.RESETONMUTATE_INVALID_REQUEST_METHOD))
 
     // It seems memJS client have problem with thier Promise-based style
     // memJS callback seem to be working just fine. so I turn their callbacks

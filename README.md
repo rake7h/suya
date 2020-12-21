@@ -2,13 +2,13 @@
 
 ![Suya](https://raw.githubusercontent.com/ridwanobafunso/suya/latest-v1.0.0/SUYA.gif 'Suya Library')
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ridwanobafunso/suya) 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ridwanobafunso/suya)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![Actions Status](https://github.com/ridwanobafunso/suya/workflows/format,%20lint,%20build%20and%20publish/badge.svg)](https://github.com/ridwanobafunso/suya/actions)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/ridwanobafunso/suya)
 [![Node version](https://img.shields.io/node/v/suya.svg?style=flat)](http://nodejs.org/download/)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ridwanobafunso/suya/blob/main/CONTRIBUTING.md)
-[![GitHub contributors](https://img.shields.io/github/contributors/ridwanobafunso/suya.svg?style=flat)](https://github.com/ridwanobafunso/suya)  
+[![GitHub contributors](https://img.shields.io/github/contributors/ridwanobafunso/suya.svg?style=flat)](https://github.com/ridwanobafunso/suya)
 
 ## Introduction
 
@@ -623,9 +623,10 @@ $ npm run benchmark:memcached
 
 ## Changelog
 
-- v1.0.0 - Commit all source codes, then I release v1.0.0 tag which triggered Github Actions workflows to format, lint, build and publish the library.
-- v1.0.0 - Unpublished v1.0.0 from npm due to some errors, and remove v1.0.0 releases and tags from this repo.
+- v1.0.2 - Fix bugs of throwing SuyaError in middleware(s) instead of passing the error to the next middleware in the cycle. Created new release with v1.0.2 tag
 - v1.0.1 - Created new release with v1.0.1 tag which triggered Github Actions workflows to format, lint, build and re-publish the library. **v1.0.1** is the **initial release**.
+- v1.0.0 - Unpublished v1.0.0 from npm due to some errors, and remove v1.0.0 releases and tags from this repo.
+- v1.0.0 - Commit all source codes, then I release v1.0.0 tag which triggered Github Actions workflows to format, lint, build and publish the library.
 
 ## Versioning
 

@@ -26,9 +26,10 @@ export class Nodecache {
     res: Response,
     next: NextFunction
   ): Promise<Response | any> {
-    // throw error if the request method is NOT 'GET'
+    // pass error to the next middleware if the request method is NOT 'GET' so that it
+    // can be handle with global express error handlers
     if (!['GET'].includes(req.method))
-      throw new SuyaError(EErrors.FOREVER_INVALID_REQUEST_METHOD)
+      next(new SuyaError(EErrors.FOREVER_INVALID_REQUEST_METHOD))
 
     // destructure get and set from nodecache object
     let { get, set } = nodecache
@@ -82,9 +83,10 @@ export class Nodecache {
     res: Response,
     next: NextFunction
   ): Promise<Response | any> {
-    // throw error if the request method is NOT 'GET'
+    // pass error to the next middleware if the request method is NOT 'GET' so that it
+    // can be handle with global express error handlers
     if (!['GET'].includes(req.method))
-      throw new SuyaError(EErrors.DURATION_INVALID_REQUEST_METHOD)
+      next(new SuyaError(EErrors.DURATION_INVALID_REQUEST_METHOD))
 
     // destructure get and set from nodecache object
     let { get, set } = nodecache
@@ -139,9 +141,11 @@ export class Nodecache {
     res: Response,
     next: NextFunction
   ): Promise<Response | any> {
-    // throw error if the request method is NOT 'POST', 'PUT', 'PATCH', or 'DELETE'
+    // pass error to the next middleware if the request method is NOT 'POST', 'PUT',
+    // 'PATCH', or 'DELETE', so that it can be handle with global express error
+    // handlers
     if (!['POST', 'PUT', 'PATCH', 'DELETE'].includes(req.method))
-      throw new SuyaError(EErrors.RESETONMUTATE_INVALID_REQUEST_METHOD)
+      next(new SuyaError(EErrors.RESETONMUTATE_INVALID_REQUEST_METHOD))
 
     // destructure get from nodecache object
     let { get } = nodecache

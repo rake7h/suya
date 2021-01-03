@@ -1,4 +1,5 @@
 import { IMiddlewareFunction } from './IMiddlewareFunction'
+import { IResetOnMutateOptionsBag } from '../interfaces/IResetOnMutateOptionsBag'
 
 /**
  * @interface ISuya
@@ -9,5 +10,5 @@ export interface ISuya {
   /** Suya duration. */
   duration(n: number): IMiddlewareFunction
   /** Suya resetOnMutate. */
-  resetOnMutate(options: any): IMiddlewareFunction
+  resetOnMutate(resetOpts: IResetOnMutateOptionsBag): IMiddlewareFunction
 }

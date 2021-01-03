@@ -108,7 +108,19 @@ app.get('/users/forever', cacheForever, async (req, res, next) => {
 app.put('/users/forever', resetCacheOnMutate, async (req, res, next) => {
   let users = await mockDB()
 
+  // res.status(400).json({
+  //   // once the indicator set on .resetOnMutate({}) middleware doesn't match
+  //   // like so, the data remain cached.
+  //   success: false,
+  //   error: {
+  //     message: 'Email address is required!',
+  //   },
+  //   code: 400,
+  // })
+
   res.status(200).json({
+    // once the indicator set on .resetOnMutate({}) middleware match like so,
+    // the cached data would get cleared it out.
     success: true,
     data: {
       users,
@@ -132,7 +144,19 @@ app.get('/users/duration', cacheWithDuration, async (req, res, next) => {
 app.put('/users/duration', resetCacheOnMutate, async (req, res, next) => {
   let users = await mockDB()
 
+  // res.status(400).json({
+  //   // once the indicator set on .resetOnMutate({}) middleware doesn't match
+  //   // like so, the data remain cached.
+  //   success: false,
+  //   error: {
+  //     message: 'Email address is required!',
+  //   },
+  //   code: 400,
+  // })
+
   res.status(200).json({
+    // once the indicator set on .resetOnMutate({}) middleware match like so,
+    // the cached data would get cleared it out.
     success: true,
     data: {
       users,
@@ -242,7 +266,19 @@ app.get('/users/forever', cacheForever, async (req, res, next) => {
 app.put('/users/forever', resetCacheOnMutate, async (req, res, next) => {
   let users = await mockDB()
 
+  // res.status(400).json({
+  //   // once the indicator set on .resetOnMutate({}) middleware doesn't match
+  //   // like so, the data remain cached.
+  //   success: false,
+  //   error: {
+  //     message: 'Email address is required!',
+  //   },
+  //   code: 400,
+  // })
+
   res.status(200).json({
+    // once the indicator set on .resetOnMutate({}) middleware match like so,
+    // the cached data would get cleared it out.
     success: true,
     data: {
       users,
@@ -266,7 +302,19 @@ app.get('/users/duration', cacheWithDuration, async (req, res, next) => {
 app.put('/users/duration', resetCacheOnMutate, async (req, res, next) => {
   let users = await mockDB()
 
+  // res.status(400).json({
+  //   // once the indicator set on .resetOnMutate({}) middleware doesn't match
+  //   // like so, the data remain cached.
+  //   success: false,
+  //   error: {
+  //     message: 'Email address is required!',
+  //   },
+  //   code: 400,
+  // })
+
   res.status(200).json({
+    // once the indicator set on .resetOnMutate({}) middleware match like so,
+    // the cached data would get cleared it out.
     success: true,
     data: {
       users,
@@ -383,7 +431,19 @@ app.get('/users/forever', cacheForever, async (req, res, next) => {
 app.put('/users/forever', resetCacheOnMutate, async (req, res, next) => {
   let users = await mockDB()
 
+  // res.status(400).json({
+  //   // once the indicator set on .resetOnMutate({}) middleware doesn't match
+  //   // like so, the data remain cached.
+  //   success: false,
+  //   error: {
+  //     message: 'Email address is required!',
+  //   },
+  //   code: 400,
+  // })
+
   res.status(200).json({
+    // once the indicator set on .resetOnMutate({}) middleware match like so,
+    // the cached data would get cleared it out.
     success: true,
     data: {
       users,
@@ -407,7 +467,19 @@ app.get('/users/duration', cacheWithDuration, async (req, res, next) => {
 app.put('/users/duration', resetCacheOnMutate, async (req, res, next) => {
   let users = await mockDB()
 
+  // res.status(400).json({
+  //   // once the indicator set on .resetOnMutate({}) middleware doesn't match
+  //   // like so, the data remain cached.
+  //   success: false,
+  //   error: {
+  //     message: 'Email address is required!',
+  //   },
+  //   code: 400,
+  // })
+
   res.status(200).json({
+    // once the indicator set on .resetOnMutate({}) middleware match like so,
+    // the cached data would get cleared it out.
     success: true,
     data: {
       users,
@@ -479,7 +551,7 @@ process.on('unhandledRejection', (err, promise) => {
 
 3. `Cache.duration([n])` - midddleware to cache for a specific duration (i.e **time to live** in cache engine) where [n] is the duration in seconds. Method supported: **GET**.
 
-4. `Cache.resetOnMutate({ indicator: { [key]: [value] })` - midddleware to reset cache on a successful mutation where [key] and [value] can be any indicator on successful mutation. e.g { success: true }. Method supported: **POST, PUT, PATCH, DELETE**.
+4. `Cache.resetOnMutate({ indicator: { [key]: [value] } })` - midddleware to reset cache on a successful mutation where [key] and [value] can be any indicator on successful mutation. e.g { success: true }. Method supported: **POST, PUT, PATCH, DELETE**.
 
 5. `Cache.close()` - this is **NOT** a middleware, its just a helper method to close open connections.
 
@@ -505,8 +577,8 @@ app.use((err, req, res, next) => {
 
 ## Tips
 
-1. `.forever()` middleware should be use when your data dont change often and use `.resetOnMutate({ indicator: { [key]: [value] })` to make it upto date on every mutation (POST, PUT, PATCH, DELETE).
-2. `.duration([n])` middleware should be use when you are dealing with real time data (data that change often) and **don't use `.resetOnMutate({ indicator: { [key]: [value] })`** on mutation at all because using will clear up the cache on every mutation (POST, PUT, PATCH, DELETE) hence no performance improvement because the data is **real time**. `.duration([n])` only would get the cache cleared out as the duration elapse.
+1. `.forever()` middleware should be use when your data dont change often and use `.resetOnMutate({ indicator: { [key]: [value] } })` to make it upto date on every mutation (POST, PUT, PATCH, DELETE).
+2. `.duration([n])` middleware should be use when you are dealing with real time data (data that change often) and **don't use `.resetOnMutate({ indicator: { [key]: [value] } })`** on mutation at all because using will clear up the cache on every mutation (POST, PUT, PATCH, DELETE) hence no performance improvement because the data is **real time**. `.duration([n])` only would get the cache cleared out as the duration elapse.
 3. `.close()` helper method should be use when node proccess crashes unexpectedly to close open connections to any external resources.
 
 ## Contributors
@@ -623,6 +695,7 @@ $ npm run benchmark:memcached
 
 ## Changelog
 
+- v1.0.3 - Improve documentation and remove dependencies that has it own types built-in i.e @types/colors and @types/node-cache. Created new release with v1.0.2 tag
 - v1.0.2 - Fix bugs of throwing SuyaError in middleware(s) instead of passing the error to the next middleware in the cycle. Created new release with v1.0.2 tag
 - v1.0.1 - Created new release with v1.0.1 tag which triggered Github Actions workflows to format, lint, build and re-publish the library. **v1.0.1** is the **initial release**.
 - v1.0.0 - Unpublished v1.0.0 from npm due to some errors, and remove v1.0.0 releases and tags from this repo.
